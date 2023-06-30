@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws.example.com/" xmlns:tns="http://ws.example.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="GetNameRequest" type="tns:GetNameRequest"/>
+
+  <xs:element name="GetNameResponse" type="tns:GetNameResponse"/>
+
+  <xs:complexType name="GetNameRequest">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="GetNameResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
